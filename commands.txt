@@ -1,0 +1,25 @@
+Terraform is a popular infrastructure-as-code (IAC) tool used to create, manage, and provision infrastructure resources. Here are some of the top Terraform commands that you'll frequently use:
+
+1. terraform init: This command initializes a new or existing Terraform configuration. It downloads provider plugins and sets up the working directory for the Terraform project.
+
+2. terraform plan: This command creates an execution plan that shows what Terraform will do when you apply your configuration. It's a crucial step for understanding the changes that will occur.
+
+3. terraform apply: This command applies the changes described in the execution plan created by terraform plan. It's used to create or update resources as defined in your configuration.
+
+4. terraform destroy: This command is used to destroy all the resources created by your configuration. It's often used to clean up resources after they are no longer needed.
+
+5. terraform validate: This command checks the validity of your configuration files without creating or modifying any resources. It's useful for catching syntax errors and issues early in the development process.
+
+6. terraform fmt: This command automatically formats your Terraform configuration files according to the Terraform style guide. It helps maintain a consistent code style.
+
+7. terraform state: This subcommand allows you to perform operations on Terraform's state file, which tracks the current state of managed resources.
+
+8. terraform import: This command is used to import existing infrastructure resources into your Terraform configuration. It allows you to manage resources that were created outside of Terraform.
+
+9. terraform output: This command displays the values of output variables defined in your configuration. It's useful for retrieving information about resources created by Terraform.
+
+10. terraform taint: This command marks a resource for recreation during the next terraform apply. It's useful when you want to force the recreation of a resource even if its configuration hasn't changed.
+
+terraform workspace: This subcommand is used to manage multiple workspaces, which allow you to maintain different configurations or environments within a single project.
+
+terraform show: This command provides a human-readable representation of the state or plan, making it easier to understand the current state of your infrastructure.
